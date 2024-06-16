@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'philv.ru'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-simple:2.0.13'
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.11.0-M1",
+            "com.codeborne:selenide:7.3.2"
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
